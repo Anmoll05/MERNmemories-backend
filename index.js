@@ -26,6 +26,6 @@ const PORT = process.env.PORT || 2000;
 
 mongoose.connect(process.env.CONNECTION_URL,{useNewUrlParser:true , useUnifiedTopology:true})
 .then(()=> app.listen(PORT , () => console.log('server running')))
-.catch((error)=> console.log(error.message));
+.catch((error)=> console.log(error.message))
 
 mongoose.set('useFindAndModify',false);
